@@ -13,7 +13,7 @@ class DespesaFactory extends Factory
     {
         return [
             'descricao' => $this->descricao(),
-            'valor' => $this->faker->randomFloat(2, 0, 99999.99),
+            'valor' => $this->faker->randomFloat(2, 0, 999.99),
             'vencimento' => $this->faker->dateTimeBetween('-1 month', '+1 month')
         ];
     }
